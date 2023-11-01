@@ -15,8 +15,8 @@ int main() {
 
     // Get the userYearAsString and display a message about the program
     std::cout << "This program will ask the user";
-    std::cout << "for their year and it will tell them";
-    std::cout << "if it is a leap year or not";
+    std::cout << " for their year and it will tell them";
+    std::cout << " if it is a leap year or not";
     std::cout << "\nEnter your year: ";
     std::cin >> userYearAsString;
 
@@ -41,14 +41,14 @@ int main() {
                             " is a leap year." << std::endl;
                 } else {
                     std::cout << leapYear4 <<
-                            " is how many years until a leap year."
+                            " is how many years since the last leap year."
                             << std::endl;
                 }
             }
         } else {
             // display that it is not a leap year
-            std::cout << leapYear4 <<
-                    " is how many years until a leap year." << std::endl;
+            std::cout << leapYear4 << 
+                    " is how many years since the last leap year." << std::endl;
         }
     } catch (std::invalid_argument) {
         // Display that the user year was not valid
